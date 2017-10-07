@@ -182,94 +182,142 @@ a.grey-link, a.grey-link:hover, a.grey-link:visited {
 <body>
 	{% assign _post = page %}
 	{% include post-image.liquid %}
-<img src="{{ post-image }}" style="display:none;"/>
-<div class="content">
-	<div class="pin"><span><a href="javascript:void(0);">up</a></span>
-	</div>
-	<div class="top-aside">
-	</div>
-	<div class="center-aside">
-		<div class="header-image">
-			<a style="display:block;height:100%;" href="{{ site.base }}/article" title="Go Home"></a>
-		</div>
-		<div class="author">
-				<div>
-	      <a class="avatar" href="{{ site.base }}/aboutme">
-	        <img src="{{ site.w3c_url }}images/avator.jpg" alt="100" title="About Me"/>
+	<img src="{{ post-image }}" style="display:none;"/>
+	<div class="content">
+		<div class="pin">
+			<span>
+				<a href="javascript:void(0);">
+					up
 				</a>
+			</span>
+		</div>
+		<div class="top-aside"></div>
+		<div class="center-aside">
+			<div class="header-image">
+				<a style="display:block;height:100%;" href="{{ site.base }}/article" title="Go Home"></a>
+			</div>
+
+			<div class="author">
+				<div>
+					<a class="avatar" href="{{ site.base }}/aboutme">
+						<img src="{{ site.w3c_url }}images/avator.jpg" alt="100" title="About Me"/>
+					</a>
 				</div>
 				<div class="info">
 					<span class="label">
-	          作者
-	      	</span>
-	      	<a class="author-name blue-link" href="{{ site.base }}/aboutme">
-	        	<span>{{ site.author }}</span>
+				  		author
+					</span>
+					<a class="author-name blue-link" href="{{ site.base }}/aboutme">
+						<span>{{ site.author }}</span>
 					</a>
-					<span style="margin-left: 10px;">{{ page.date | date:"%Y-%m-%d %H:%M:%S" }}</span>
-	      	<div>
-						<span>写了<a class="blue-link" href="{{ site.base }}/article"><i style="font-style:normal;" id="totalPosts">0</i>篇</a>文章</span>，
-	        	<span>共<i style="font-style:normal;" id="totalWords">0</i>字</span>，
-						<span>获得了<i style="font-style:normal;" id="totalComments">0</i>条评论</span>
-						<!-- <span>获得了<i style="font-style:normal;" id="totalLikes">0</i>个喜欢</span> -->
-	      	</div>
-					<div class="talk"><span id="shuoshuo">暂无说说</span><a class="blue-link" target="_parent" href="{{ site.base }}/#comments"> · 评论</a></div>
+					<span style="margin-left: 10px;">
+						{{ page.date | date:"%Y-%m-%d %H:%M:%S" }}
+					</span>
+					<div>
+						<span>
+							wrote
+							<a class="blue-link" href="{{ site.base }}/article">
+								<i style="font-style:normal;" id="totalPosts">
+									0
+								</i>
+								Articles
+							</a>
+							article
+						</span>，
+						<span>
+							Altogether
+							<i style="font-style:normal;" id="totalWords">
+								0
+							</i>
+							word
+						</span>，
+						<span>
+							Won
+							<i style="font-style:normal;" id="totalComments">
+								0
+							</i>
+							Comments
+						</span>
+					</div>
+					<div class="talk">
+						<span id="shuoshuo">
+							No talk
+						</span>
+						<a class="blue-link" target="_parent" href="{{ site.base }}/#comments">
+							· comment
+						</a>
+					</div>
 				</div>
-    </div>
-		<div class="title">{{ page.title }}</div>
-		<div class="meta">
-            <span class="wordage">字数·{{ page.content | number_of_words }}</span>
-            <!-- <span class="views-count">阅读5448</span> -->
-            <span ><a class="grey-link post-data" target="_parent" href="#comments" data-method="comments" data-thread-key="{{ page.pid }}" data-text="评论·%s">评论0</a></span>
-						<span class="post-data" data-method="likes" data-thread-key="{{ page.pid }}" data-text="喜欢·%s">喜欢0</span>
-            <span class="post-data" data-method="reposts" data-thread-key="{{ page.pid }}" data-text="转发·%s">转发0</span>
-    </div>
+			</div>
 
-		<div class="post">
-			{{ content }}
+			<div class="title">
+				{{ page.title }}
+			</div>
+
+			<div class="meta">
+				<span class="wordage">
+					Word Count·{{ page.content | number_of_words }}
+				</span>
+				<span >
+					<a class="grey-link post-data" target="_parent" href="#comments" data-method="comments" data-thread-key="{{ page.pid }}" data-text="comment·%s">
+						comment0
+					</a>
+				</span>
+				<span class="post-data" data-method="likes" data-thread-key="{{ page.pid }}" data-text="like·%s">
+					like0
+				</span>
+				<span class="post-data" data-method="reposts" data-thread-key="{{ page.pid }}" data-text="Forwarding·%s">
+					Forwarding0
+				</span>
+			</div>
+
+			<div class="post">
+				{{ content }}
+			</div>
+
+			<div class="post-footer">
+				<p>&copy; {{ site.title }}</p>
+			</div>
+
+			<div class="post-tags">
+				TAGS:
+				{% assign _post = page %}
+				{% include post-categories.liquid %}
+				{% for tag in post-categories %}
+				<span class="tag"><a href="{{ site.base }}/article?category={{ tag }}">{{ tag }}</a></span>
+				{% endfor %}
+			</div>
+
+			<div class="PageNavigation">
+			  {% if page.previous.url %}
+				<a class="prev" href="{{ page.previous.url }}">&nbsp;&laquo; {{ page.previous.title }}</a>
+			  {% endif %}
+			  {% if page.next.url %}
+				<a class="next" href="{{ page.next.url }}">{{ page.next.title }} &raquo;&nbsp;</a>
+			  {% endif %}
+			</div>
+
+			<div style="height: 20px;"></div>
+			<div class="ds-share flat" data-thread-key="{{ page.pid }}" data-title="{{ page.title }}" data-images="{{ image_url }}" data-content="{{ post.excerpt | strip | replace:'"', "'" | strip_newlines }}" data-url="{{ site.domain }}{{ page.url }}">
+			<div class="ds-share-inline">
+		  		<ul  class="ds-share-icons-16">
+					<li >
+						<span class="ds-more">share to：</span>
+					</li>
+					<li>
+						<a class="ds-facebook" href="javascript:void(0);" data-service="facebook">Facebook</a>
+					</li>
+		  		</ul>
+		  <div class="ds-share-icons-more">
+		  </div>
 		</div>
-
-		<div class="post-footer">
-			<p>&copy; {{ site.title }}</p>
-		</div>
-
-		<div class="post-tags">
-			TAGS:
-			{% assign _post = page %}
-			{% include post-categories.liquid %}
-			{% for tag in post-categories %}
-			<span class="tag"><a href="{{ site.base }}/article?category={{ tag }}">{{ tag }}</a></span>
-			{% endfor %}
-		</div>
-
-		<div class="PageNavigation">
-		  {% if page.previous.url %}
-		    <a class="prev" href="{{ page.previous.url }}">&nbsp;&laquo; {{ page.previous.title }}</a>
-		  {% endif %}
-		  {% if page.next.url %}
-		    <a class="next" href="{{ page.next.url }}">{{ page.next.title }} &raquo;&nbsp;</a>
-		  {% endif %}
-		</div>
-
-		<div style="height: 20px;"></div>
-		<div class="ds-share flat" data-thread-key="{{ page.pid }}" data-title="{{ page.title }}" data-images="{{ image_url }}" data-content="{{ post.excerpt | strip | replace:'"', "'" | strip_newlines }}" data-url="{{ site.domain }}{{ page.url }}">
-    <div class="ds-share-inline">
-      <ul  class="ds-share-icons-16">
-      	<li ><span class="ds-more">分享到：</span></li>
-        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-				<li><a class="ds-facebook" href="javascript:void(0);" data-service="facebook">Facebook</a></li>
-      </ul>
-      <div class="ds-share-icons-more">
-      </div>
-    </div>
- 		</div>
-		<!-- duoshuo -->
-		<div name="comments" id="comments">
-		<div class="ds-thread" data-thread-key="{{ page.pid }}" data-max-depth="{{ site.duoshuo_max_depth }}" data-title="{{ page.title }}" data-url="{{ site.domain }}{{ page.url }}"></div>
+			</div>
+			<!-- duoshuo -->
+			<div name="comments" id="comments">
+			<div class="ds-thread" data-thread-key="{{ page.pid }}" data-max-depth="{{ site.duoshuo_max_depth }}" data-title="{{ page.title }}" data-url="{{ site.domain }}{{ page.url }}"></div>
+			</div>
 		</div>
 	</div>
-</div>
 
 <!-- duoshuo -->
 {% include duoshuo.js %}

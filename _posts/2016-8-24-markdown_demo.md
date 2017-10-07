@@ -147,10 +147,10 @@ I start my morning with a cup of coffee and
 > \[id]: http://example.com/ "With a Title"
 
 ## image
-![alt text](/w3c/images/avator.jpg "Title")
+![alt text](/w3c/images/avator.jpeg "Title")
 ![alt text][id]
 
-[id]: /w3c/images/avator.jpg "Title"
+[id]: /w3c/images/avator.jpeg "Title"
 
 > The same as Link
 > But start with  `!`
