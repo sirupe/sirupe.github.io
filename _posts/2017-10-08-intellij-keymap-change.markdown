@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Mac] Intelli J 단축키 변경하기"
-categories: [IntelliJ, mac]
+categories: IntelliJ
 img: use-post/intellij.jpg
 ---
 
