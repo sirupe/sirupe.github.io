@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sirupe's blog</title>
+    <description>I'm upgrading my skills. Programming skills, English, etc ...
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 09 Oct 2017 16:43:55 +0900</pubDate>
+    <lastBuildDate>Mon, 09 Oct 2017 16:43:55 +0900</lastBuildDate>
+    <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>[Mac] Intelli J 단축키 변경하기</title>
+        <description>&lt;p&gt;강력한 추천을 받아 Intelli J 를 사용하기로 했습니다. (mac 에는 Intelli J 지! 라며..)&lt;/p&gt;
+
+&lt;p&gt;이전까지는 이클립스를 사용해오던 터라 단축키가 매우 헷갈리기도 했고,&lt;/p&gt;
+
+&lt;p&gt;맥북을 사용중인지라 이미 바꾼 맥북 키설정과도 충돌에 문제가 없도록&lt;/p&gt;
+
+&lt;p&gt;Intelli J 의 단축키 변경이 반드시 필요했어요.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;1-단축키-변경을-위한-메뉴&quot;&gt;1. 단축키 변경을 위한 메뉴&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;IntelliJ IDEA&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences...&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Keymap&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;mac 의 최상단에 항상 나오는 메뉴 중 위 메뉴를 따라 선택하면&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/menu.jpg&quot; alt=&quot;menu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;아래의 &lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; 창이 떠요.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; 메뉴 중 &lt;code class=&quot;highlighter-rouge&quot;&gt;Keymap&lt;/code&gt; 메뉴가 단축키를 변경할 수 있는 메뉴에요 !&lt;/p&gt;
+
+&lt;p&gt;주로 봐야 할 부분은 빨간 테두리 영역이지요 :D&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/keymap.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;2-단축키를-변경할-작업-찾기&quot;&gt;2. 단축키를 변경할 작업 찾기&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;변경하고 싶은 동작의 keyword 를 영문으로 알고 있다면 검색해주세요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/search-word.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;적용하고 싶은 단축키가 어떤 동작에 매핑되어있는지 찾고 싶다면&lt;/p&gt;
+
+&lt;p&gt;검색바 우측의 파란 돋보기 모양의 아이콘을 클릭하세요.&lt;/p&gt;
+
+&lt;p&gt;클릭하면 아래의 사진처럼 &lt;code class=&quot;highlighter-rouge&quot;&gt;Find Shortcut&lt;/code&gt; 창이 뜨는데요,&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Find Shortcut&lt;/code&gt; 창에서 단축키를 마구마구 입력해보면&lt;/p&gt;
+
+&lt;p&gt;해당 단축키가 매핑되어 있는 동작이 찾아집니다!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/find-shotcut.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;3-단축키-변경하기&quot;&gt;3. 단축키 변경하기&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;단축키를 변경하고 싶다면 위의 방법으로 찾은, 변경하고 싶은 동작 명을 우클릭하세요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/right-click.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;우클릭하면 각종 메뉴들이 나옵니다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Add Keyboard Shortcut
+&amp;gt; 키보드 단축키를 등록합니다.
+
+Add Mouse Shortcut
+&amp;gt; 마우스 단축키를 등록합니다.
+
+Add Abbreviation
+&amp;gt; Search Everywhere (더블 shift) 화면에서 제일 먼저 검색될 검색어를 입력합니다. (Top hit 에 표시됩니다.)
+
+Remove ...
+&amp;gt; 등록된 단축키, 검색어 등을 삭제합니다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;등록하고자 하는 메뉴를 선택하여 동작시킬 단축키를 입력합니다.&lt;/p&gt;
+
+&lt;p&gt;만약 등록하고자 하는 단축키가 이미 다른 동작에 매핑되어 있으면 경고메세지가 뜨게 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/keyboard-shortcut.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;경고메세지를 살펴보면 어떤 동작에 해당 단축키가 등록되어 있는지 보여요 :D&lt;/p&gt;
+
+&lt;p&gt;어쨌든 OK 를 눌러보면 .. 아래와 같은 창이 뜨는 것을 볼 수 있어요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/warning.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Leave] 등록하고자 하는 단축키를 등록하고 기존의 단축키도 그대로 놔둡니다.
+[Cancel] 단축키 등록작업을 취소합니다.
+[Remove] 기존에 등록되어 있던 단축키를 삭제하고 현재 등록하고자 하는 단축키를 등록합니다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;원하는 작업의 버튼을 클릭해주시면 단축키 변경 작업은 완료됩니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;4-단축키-삭제하기&quot;&gt;4. 단축키 삭제하기&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;기존에 등록되어 있던 단축키를 미처 확인하지 못했다거나&lt;/p&gt;
+
+&lt;p&gt;다시 등록하기가 귀찮다거나 하면 &lt;code class=&quot;highlighter-rouge&quot;&gt;Leave&lt;/code&gt; 를 선택하게 될텐데요,&lt;/p&gt;
+
+&lt;p&gt;그렇게 되면 하나의 단축키에 두 가지의 작업이 매핑되어 버려요. :(&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/overlap-search.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;다시 키매핑으로 동작을 찾아보면 두가지가 나오는 것을 확인할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;기존의 동작이 쓸데가 없다면 해당 단축키를 &lt;code class=&quot;highlighter-rouge&quot;&gt;Remove&lt;/code&gt; 해주시면 됩니다 :D&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/remove.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;잠깐-add-abbreviation-&quot;&gt;#잠깐.. Add Abbreviation ??&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;단축키를 등록하는 메뉴 중 키보드와 마우스를 제외한 &lt;code class=&quot;highlighter-rouge&quot;&gt;Add Abbreviation&lt;/code&gt; 이 있었던 것을 기억하실거에요.&lt;/p&gt;
+
+&lt;p&gt;익숙하지 않은 영어에.. 뜻을 찾아봐도 ‘축약형’ 이라는 뜻만 나오고..&lt;/p&gt;
+
+&lt;p&gt;해서 무슨 기능인지 찾아봤습니다 :D&lt;/p&gt;
+
+&lt;p&gt;먼저 일단 &lt;code class=&quot;highlighter-rouge&quot;&gt;Add Abbreviation&lt;/code&gt; 을 등록해봅니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/abbreviation.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;등록한 글자가 단축키가 표시되는 부분에 표시되는군요 !&lt;/p&gt;
+
+&lt;p&gt;이렇게 등록된 &lt;code class=&quot;highlighter-rouge&quot;&gt;Abbreviation&lt;/code&gt; 은 키워드를 입력해서 찾는 검색창에 검색하여도 검색이 됩니다.&lt;/p&gt;
+
+&lt;p&gt;하지만 여기서 검색하려고 만든 기능은 아니에요 :D&lt;/p&gt;
+
+&lt;p&gt;Intelli J 를 좀 사용해보셨다면 쉬프트키를 두번 누르면 (Double Shift)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Search Everywhere&lt;/code&gt; 창이 뜨는 것을 본 적이 있으실거에요.&lt;/p&gt;
+
+&lt;p&gt;찾고자 하는 파일명이나 기능명을 입력하면 굳이 찾아가지 않아도 바로 찾을 수 있어요.&lt;/p&gt;
+
+&lt;p&gt;여기에 아까 임의로 등록했던 ‘para’ 를 검색해보면 ~&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/search-everywhere.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Top Hit&lt;/code&gt; 부분에 제일 상단에 해당 메뉴가 조회되는 것을 볼 수 있어요 ~&lt;/p&gt;
+
+&lt;p&gt;아예 안쓰는 것도 아니고.. 단축키를 등록해놓기도 애매하고..&lt;/p&gt;
+
+&lt;p&gt;가끔 찾아갈 때마다 경로는 너무 헷갈리는 메뉴 등을&lt;/p&gt;
+
+&lt;p&gt;찾기 편한 단어로 등록해놓으면 좋을 것 같아요 :D&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Oct 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/intellij-keymap-change/</link>
+        <guid isPermaLink="true">http://localhost:4000/intellij-keymap-change/</guid>
+        
+        
+        <category>IntelliJ</category>
+        
+        <category>mac</category>
+        
+      </item>
+    
+      <item>
+        <title>markdown 문법</title>
+        <description>&lt;p&gt;github 블로그에 포스팅을 하려면 마크다운 언어를 사용해야 합니다 :D&lt;/p&gt;
+
+&lt;p&gt;마크다운 언어는 구조적으로 유효한 XHTML 혹은 HTML 로 선택적 변환이 가능하게 하는 것이 목표라네요.&lt;/p&gt;
+
+&lt;p&gt;두고두고 볼 요량으로 정리해봅니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;h1--h6&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;h1 ~ h6&lt;/code&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;글자 앞에 #을 붙여줍니다. #의 갯수로 크기를 판단합니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;gh&quot;&gt;# h1&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;## h2&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;### h3&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;#### h4&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;##### h5&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;###### h6&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;h1&quot;&gt;h1&lt;/h1&gt;
+&lt;h2 id=&quot;h2&quot;&gt;h2&lt;/h2&gt;
+&lt;h3 id=&quot;h3&quot;&gt;h3&lt;/h3&gt;
+&lt;h4 id=&quot;h4&quot;&gt;h4&lt;/h4&gt;
+&lt;h5 id=&quot;h5&quot;&gt;h5&lt;/h5&gt;
+&lt;h6 id=&quot;h6&quot;&gt;h6&lt;/h6&gt;
+
+&lt;h2 id=&quot;문단-제목&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;문단 제목&lt;/code&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;구분선을 통하여 문단의 제목을 작성할 수 있습니다. = 는 h1 과 같고 - 는 h2 정도의 크기입니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;gu&quot;&gt;문단의 제목
+==============
+&lt;/span&gt;문단의 제목
+&lt;span class=&quot;p&quot;&gt;--------------&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;문단의-제목-&quot;&gt;문단의 제목 (=)&lt;/h1&gt;
+
+&lt;h1 id=&quot;문단의-제목-h1&quot;&gt;문단의 제목 (h1)&lt;/h1&gt;
+
+&lt;h2 id=&quot;문단의-제목--&quot;&gt;문단의 제목 (-)&lt;/h2&gt;
+
+&lt;h2 id=&quot;문단의-제목h2&quot;&gt;문단의 제목(h2)&lt;/h2&gt;
+
+&lt;h2 id=&quot;이탤릭체-볼드-취소선&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;이탤릭체, 볼드, 취소선&lt;/code&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이탤릭체(기울이기)는 * 혹은 _, 볼드(굵게) 는 ** 혹은 __, 취소선은 ~~ 기호를 사용합니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;ge&quot;&gt;*이탤릭체*&lt;/span&gt;
+&lt;span class=&quot;ge&quot;&gt;_이탤릭체_&lt;/span&gt;
+&lt;span class=&quot;gs&quot;&gt;**볼드**&lt;/span&gt;
+&lt;span class=&quot;gs&quot;&gt;__볼드__&lt;/span&gt;
+~~취소선~~&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;이탤릭체&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;볼드&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;취소선&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;하이퍼링크&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;하이퍼링크&lt;/code&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;글 작성 중 하이퍼링크가 필요하다면 아래 형태로 사용할 수 있습니다&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;naver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://www.naver.com&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;naver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://www.naver.com&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;&quot;네이버&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;적용 시 &lt;a href=&quot;https://github.com/sirupe&quot;&gt;sirupe 의 깃허브로 이동&lt;/a&gt; 하게 됩니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;블럭-사용&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;블럭 사용&lt;/code&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;블럭 으로 사용할 문단 앞에 &amp;gt; 를 붙여주세요.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;gt&quot;&gt;&amp;gt; 문단!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;문단!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;리스트-사용&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;리스트 사용&lt;/code&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;순서가 있는 리스트 사용은 앞에 숫자를 붙여줍니다.&lt;/p&gt;
+
+&lt;p&gt;순서대로 번호를 붙이지 않아도 자동으로 순서가 증가합니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; 순서 1
+&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; 순서 2
+&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; 순서 3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;순서 1&lt;/li&gt;
+  &lt;li&gt;순서 2&lt;/li&gt;
+  &lt;li&gt;순서 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;순서가 없는 리스트 사용은 -, * 등의 기호를 사용합니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; 순서 1
+&lt;span class=&quot;p&quot;&gt;    -&lt;/span&gt; 순서 1-1
+&lt;span class=&quot;p&quot;&gt;    -&lt;/span&gt; 순서 1-2
+&lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; 순서 2
+&lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; 순서 3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;순서 1
+    &lt;ul&gt;
+      &lt;li&gt;순서 1-1&lt;/li&gt;
+      &lt;li&gt;순서 1-2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;순서 2&lt;/li&gt;
+  &lt;li&gt;순서 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;가로줄&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;가로줄&lt;/code&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;여러가지 표현법이 있지만 모두 가로줄을 그려줍니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;* * *
+***
+*****&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;- - -
+------------------&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Sun, 08 Oct 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/first-posting/</link>
+        <guid isPermaLink="true">http://localhost:4000/first-posting/</guid>
+        
+        
+        <category>markdown</category>
+        
+      </item>
+    
+  </channel>
+</rss>

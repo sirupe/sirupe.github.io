@@ -1,70 +1,53 @@
+# Welcome to Jekyll!
 #
-###################################
-# Site wide configuration
-####################################
-#
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
-url: # the base hostname & protocol for your site
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
+# Site settings
+title: sirupe's blog
+email: sirupe@nate.com
+description: > # this means to ignore newlines until "baseurl:"
+  I'm upgrading my skills. Programming skills, English, etc ...
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sirupe.github.io" # the base hostname & protocol for your site
+timezone: Asia/Seoul
 
-#
-###################################
-# Jekyll configuration
-####################################
-#
-timezone:          Europe/Paris
-markdown:          kramdown
-highlighter:       rouge
-excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+#sidebar
+default-image: poco.jpeg # If there is no featured image in a post then this image will be showed. Also on all pages this image will be showed. Use a 500x250 image.
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
+#footer
+built-by: webjeda
+copyright:
+   name: webjeda
+   link: 'http://blog.webjeda.com'
 
-#
-###################################
-# Site Owner configuration
-####################################
-#
-owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
-  disqus-shortname:
-  twitter: #username
-  facebook: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: #username
-  gitlab: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  skype: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  500px: #username
-  codepen: #username
-  reddit: #username
+# Build settings
+markdown: kramdown
+permalink: /:title/
+paginate: 6
+paginate_path: /page:num/
+
+# Tracker
+analytics: UA-83979019-1
+
+# Comments
+disqus-shortname: webjeda-demo
+
+#social
+facebook: https://www.facebook.com/profile.php?id=100005127373550/
+github: http://github.com/sirupe
+
+#facebook like box
+fb-app-id: 549480635219583
+fb-page-url: https://www.facebook.com/profile.php?id=100005127373550/
+fb-page-title: sirupe
+
+# Sass style
+sass:
+  style: compressed
+
+# Ruby Gems
+gems: [jekyll-paginate, jekyll-seo-tag]
+

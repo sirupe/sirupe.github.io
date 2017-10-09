@@ -1,0 +1,63 @@
+---
+layout: page
+permalink: /categories/
+title: Categories
+---
+
+
+<div id="archives">
+	<div>
+	{% for category in site.categories %}
+		{% capture category_name %}{{ category | first }}{% endcapture %}
+		<a href="#{{ category_name }}" class="btn btn-default">
+			{{ category_name }}
+		</a>
+	{% endfor %}
+	</div>
+
+	{% for category in site.categories %}
+		{% capture category_name %}{{ category | first }}{% endcapture %}
+	<div class="archive-group row" id="{{ category_name | slugize}}">
+		<h3 class="category-head">{{ category_name }}</h3>
+		<div class="pack width-webkit-fill-available">
+		{% for post in site.categories[category_name] %}
+		<div class="col-md-5 card">
+			<div class="panel panel-default">
+				<a href="{{ post.url | prepend: site.baseurl }}">
+					<div class="panel-body">
+						<h3 class="panel-title pull-left">
+							{{ post.title | truncate: 25 }}
+						</h3>
+						<span class="post-meta pull-right">
+	                            <small>
+	                                {{ post.date | date: "%Y-%m-%d" }}
+	                            </small>
+	                        </span>
+					</div>
+					{% if post.img %}
+					<img width="100%" src="{{site.baseurl}}/images/{{post.img}}" alt="{{post.title}}">
+					{% else %}
+					<img width="100%" src="{{site.baseurl}}/images/poco.jpeg" alt="{{site.title}}">
+					{% endif %}
+				</a>
+				<div class="panel-body">
+					<a href="{{ post.url | prepend: site.baseurl }}">
+						<small>
+							{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}
+						</small>
+					</a>
+					<div class="mt10 text-right">
+						{% for category in post.categories %}
+						<a href="categories/#{{ category }}" class="btn btn-info btn-xs">{{ category }}</a>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		{% endfor %}
+		</div>
+	</div>
+	{% endfor %}
+</div>
