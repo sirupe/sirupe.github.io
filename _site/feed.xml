@@ -6,9 +6,83 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Oct 2017 13:51:54 +0900</pubDate>
-    <lastBuildDate>Tue, 10 Oct 2017 13:51:54 +0900</lastBuildDate>
+    <pubDate>Tue, 10 Oct 2017 17:10:41 +0900</pubDate>
+    <lastBuildDate>Tue, 10 Oct 2017 17:10:41 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>[Mac] Spaces 순서가 자꾸 바뀐다면?</title>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;현재 개인용 노트북으로는 맥북을 사용하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;윈도우의 노예였던 저는 맥북을 100% 활용하지 못했었는데요,&lt;/p&gt;
+
+&lt;p&gt;(&lt;del&gt;사실 지금도 ㅠㅠ&lt;/del&gt;)&lt;/p&gt;
+
+&lt;p&gt;그래도 트랙패드에 손가락 세 개를 가져다 대고 위로 슥~ 올리면 나타나는 Dashboard Spaces 기능은 아주 유용하게 사용하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;아주 여러개를 띄워놓지 않아서 별 문제를 못 느끼고 있었는데, 어느 날.. 4개쯤 띄워놓고 쓰려고 하니 생성된 데스크탑들의 순서가 바뀌는게 아니겠어요..?!&lt;/p&gt;
+
+&lt;p&gt;그래서 그 기능을 끄는 방법을 찾아봤지요 :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-10-mac-os/screenshot.jpg&quot; alt=&quot;mission control&quot; /&gt;
+(위의 빨간 부분이 spaces. 마치 여러대의 모니터를 사용하는 것 같은 기분!)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;설정을-변경합시다&quot;&gt;설정을 변경합시다.&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;설정 메뉴를 찾아서 들어갑니다.&lt;/p&gt;
+
+&lt;p&gt;상단 메뉴 바의 사과모양 아이콘을 이용하거나&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-10-mac-os/menu01.jpg&quot; alt=&quot;mission control&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;네 손가락을 오므려서 런치패드를 이용하거나&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-10-mac-os/launchpad.jpg&quot; alt=&quot;mission control&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Spotlight 에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;Mission Control&lt;/code&gt; 을 검색해서 바로 들어가주세요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-10-mac-os/spotlight.jpg&quot; alt=&quot;mission control&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;언급했다시피 들어가야 하는 메뉴는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Missnio Control&lt;/code&gt; 메뉴입니다 :D&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-10-mac-os/preferences.jpg&quot; alt=&quot;mission control&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Mission Contorl&lt;/code&gt; 메뉴에 들어가면 아래와 같은 설정 창이 뜨구요 ,&lt;/p&gt;
+
+&lt;p&gt;그 중 &lt;code class=&quot;highlighter-rouge&quot;&gt;Spaces 를 최근 사용 내역에 따라 자동으로 재정렬&lt;/code&gt; 부분에 체크가 되어있어서 순서가 마구 변경되는 것이었어요 :D&lt;/p&gt;
+
+&lt;p&gt;체크를 해제해줍시다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-10-mac-os/missioncontrol.jpg&quot; alt=&quot;mission control&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그럼 이제 순서가 바뀌지 않고 내가 설정한 순서대로 대쉬보드를 사용할 수 있어요 :3&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Oct 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/mac-os/</link>
+        <guid isPermaLink="true">http://localhost:4000/mac-os/</guid>
+        
+        
+        <category>mac</category>
+        
+      </item>
     
       <item>
         <title>[Mac] Intelli J 단축키 변경하기</title>
@@ -188,7 +262,7 @@ Remove ...
       </item>
     
       <item>
-        <title>markdown 문법</title>
+        <title>깃허브 블로그에 적용되는 markdown 문법</title>
         <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;github 블로그에 포스팅을 하려면 마크다운 언어를 사용해야 합니다 :D&lt;/p&gt;
@@ -197,10 +271,9 @@ Remove ...
 
 &lt;p&gt;두고두고 볼 요량으로 정리해봅니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;h1--h6&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;h1 ~ h6&lt;/code&gt;&lt;/h2&gt;
-
+&lt;h1 id=&quot;h1--h6&quot;&gt;&lt;strong&gt;h1 ~ h6&lt;/strong&gt;&lt;/h1&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;글자 앞에 #을 붙여줍니다. #의 갯수로 크기를 판단합니다.&lt;/p&gt;
@@ -212,34 +285,25 @@ Remove ...
 &lt;span class=&quot;gu&quot;&gt;##### h5&lt;/span&gt;
 &lt;span class=&quot;gu&quot;&gt;###### h6&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h1 id=&quot;h1&quot;&gt;h1&lt;/h1&gt;
-&lt;h2 id=&quot;h2&quot;&gt;h2&lt;/h2&gt;
-&lt;h3 id=&quot;h3&quot;&gt;h3&lt;/h3&gt;
-&lt;h4 id=&quot;h4&quot;&gt;h4&lt;/h4&gt;
-&lt;h5 id=&quot;h5&quot;&gt;h5&lt;/h5&gt;
-&lt;h6 id=&quot;h6&quot;&gt;h6&lt;/h6&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-first-posting/header.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;문단-제목&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;문단 제목&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
+&lt;h1 id=&quot;문단-제목&quot;&gt;&lt;strong&gt;문단 제목&lt;/strong&gt;&lt;/h1&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;구분선을 통하여 문단의 제목을 작성할 수 있습니다. = 는 h1 과 같고 - 는 h2 정도의 크기입니다.&lt;/p&gt;
+&lt;p&gt;구분선을 통하여 문단의 제목을 작성할 수 있습니다. = 는 &amp;lt;h1&amp;gt; 과 같고 - 는 &amp;lt;h2&amp;gt; 정도의 크기입니다.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;gu&quot;&gt;문단의 제목
 ==============
 &lt;/span&gt;문단의 제목
 &lt;span class=&quot;p&quot;&gt;--------------&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h1 id=&quot;문단의-제목-&quot;&gt;문단의 제목 (=)&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-first-posting/title.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;문단의-제목-h1&quot;&gt;문단의 제목 (h1)&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;문단의-제목--&quot;&gt;문단의 제목 (-)&lt;/h2&gt;
-
-&lt;h2 id=&quot;문단의-제목h2&quot;&gt;문단의 제목(h2)&lt;/h2&gt;
-
-&lt;h2 id=&quot;이탤릭체-볼드-취소선&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;이탤릭체, 볼드, 취소선&lt;/code&gt;&lt;/h2&gt;
-
+&lt;h1 id=&quot;이탤릭체-볼드-취소선&quot;&gt;&lt;strong&gt;이탤릭체, 볼드, 취소선&lt;/strong&gt;&lt;/h1&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;이탤릭체(기울이기)는 * 혹은 _, 볼드(굵게) 는 ** 혹은 __, 취소선은 ~~ 기호를 사용합니다.&lt;/p&gt;
@@ -256,8 +320,9 @@ Remove ...
 
 &lt;p&gt;&lt;del&gt;취소선&lt;/del&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;하이퍼링크&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;하이퍼링크&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
+&lt;h1 id=&quot;하이퍼링크&quot;&gt;&lt;strong&gt;하이퍼링크&lt;/strong&gt;&lt;/h1&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;글 작성 중 하이퍼링크가 필요하다면 아래 형태로 사용할 수 있습니다&lt;/p&gt;
@@ -267,20 +332,52 @@ Remove ...
 
 &lt;p&gt;적용 시 &lt;a href=&quot;https://github.com/sirupe&quot;&gt;sirupe 의 깃허브로 이동&lt;/a&gt; 하게 됩니다.&lt;/p&gt;
 
-&lt;h2 id=&quot;블럭-사용&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;블럭 사용&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;이미지-삽입&quot;&gt;&lt;strong&gt;이미지 삽입&lt;/strong&gt;&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;포스팅을 할 때 이미지 삽입이 필요한 경우가 많을텐데요, 아래의 형태로 사용하면 됩니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;img태그 alt속성&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;이미지경로&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;poco&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;/images/poco.jpeg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;이미지 경로에는 이미지태그 삽입시 입력해야 하는 경로와 동일한 경로를 입력해주시면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이미지 경로 정상 입력시 &amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/poco.jpeg&quot; alt=&quot;poco&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이미지 경로가 부정확할 때 &amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/poco.jpeg&quot; alt=&quot;poco&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;인용구&quot;&gt;&lt;strong&gt;인용구&lt;/strong&gt;&lt;/h1&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;블럭 으로 사용할 문단 앞에 &amp;gt; 를 붙여주세요.&lt;/p&gt;
+&lt;p&gt;인용구 블럭은 문단 앞에 &amp;gt; 를 붙여줌으로써 사용할 수 있습니다.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;gt&quot;&gt;&amp;gt; 문단!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;인용구 표시 두번 입력하게 되면 인용구 블럭 안에 인용구 블럭을 넣을수도 있지요~&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;gt&quot;&gt;&amp;gt; 인용구&lt;/span&gt;
+&lt;span class=&quot;gt&quot;&gt;&amp;gt;&amp;gt; 인용구&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;문단!&lt;/p&gt;
+  &lt;p&gt;인용구&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;인용구&lt;/p&gt;
+  &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;리스트-사용&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;리스트 사용&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
+&lt;h1 id=&quot;리스트-사용&quot;&gt;&lt;strong&gt;리스트 사용&lt;/strong&gt;&lt;/h1&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;순서가 있는 리스트 사용은 앞에 숫자를 붙여줍니다.&lt;/p&gt;
@@ -316,8 +413,9 @@ Remove ...
   &lt;li&gt;순서 3&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;가로줄&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;가로줄&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
+&lt;h1 id=&quot;가로줄&quot;&gt;&lt;strong&gt;가로줄&lt;/strong&gt;&lt;/h1&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;여러가지 표현법이 있지만 모두 가로줄을 그려줍니다.&lt;/p&gt;
