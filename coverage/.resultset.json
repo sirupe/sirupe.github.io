@@ -1,0 +1,30 @@
+{
+  "MiniTest": {
+    "coverage": {
+      "/Users/jieunjung/IdeaProjects/sirupe.github.io/_plugins/jekyll-toc-master/test/test_inject_anchors_filter.rb": [
+        1,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1507605484
+  }
+}

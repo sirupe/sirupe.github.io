@@ -5,11 +5,18 @@ categories: markdown
 img: use-post/markdown.jpg
 ---
 
+<br/>
+
 github 블로그에 포스팅을 하려면 마크다운 언어를 사용해야 합니다 :D
 
 마크다운 언어는 구조적으로 유효한 XHTML 혹은 HTML 로 선택적 변환이 가능하게 하는 것이 목표라네요.
 
 두고두고 볼 요량으로 정리해봅니다.
+
+
+<br/>
+
+
 
 ## `h1 ~ h6`
 

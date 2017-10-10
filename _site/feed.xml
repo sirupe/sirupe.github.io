@@ -6,13 +6,14 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Oct 2017 17:17:30 +0900</pubDate>
-    <lastBuildDate>Mon, 09 Oct 2017 17:17:30 +0900</lastBuildDate>
+    <pubDate>Tue, 10 Oct 2017 13:51:54 +0900</pubDate>
+    <lastBuildDate>Tue, 10 Oct 2017 13:51:54 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
         <title>[Mac] Intelli J 단축키 변경하기</title>
-        <description>&lt;p&gt;강력한 추천을 받아 Intelli J 를 사용하기로 했습니다. (mac 에는 Intelli J 지! 라며..)&lt;/p&gt;
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+강력한 추천을 받아 Intelli J 를 사용하기로 했습니다. (mac 에는 Intelli J 지! 라며..)&lt;/p&gt;
 
 &lt;p&gt;이전까지는 이클립스를 사용해오던 터라 단축키가 매우 헷갈리기도 했고,&lt;/p&gt;
 
@@ -20,7 +21,8 @@
 
 &lt;p&gt;Intelli J 의 단축키 변경이 반드시 필요했어요.&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;1-단축키-변경을-위한-메뉴&quot;&gt;1. 단축키 변경을 위한 메뉴&lt;/h3&gt;
 &lt;hr /&gt;
 
@@ -30,6 +32,8 @@
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/menu.jpg&quot; alt=&quot;menu&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;p&gt;아래의 &lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; 창이 떠요.&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; 메뉴 중 &lt;code class=&quot;highlighter-rouge&quot;&gt;Keymap&lt;/code&gt; 메뉴가 단축키를 변경할 수 있는 메뉴에요 !&lt;/p&gt;
@@ -38,14 +42,16 @@
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/keymap.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;2-단축키를-변경할-작업-찾기&quot;&gt;2. 단축키를 변경할 작업 찾기&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;변경하고 싶은 동작의 keyword 를 영문으로 알고 있다면 검색해주세요.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/search-word.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;적용하고 싶은 단축키가 어떤 동작에 매핑되어있는지 찾고 싶다면&lt;/p&gt;
 
@@ -59,7 +65,8 @@
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/find-shotcut.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;3-단축키-변경하기&quot;&gt;3. 단축키 변경하기&lt;/h3&gt;
 &lt;hr /&gt;
 
@@ -82,11 +89,15 @@ Remove ...
 &amp;gt; 등록된 단축키, 검색어 등을 삭제합니다.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;p&gt;등록하고자 하는 메뉴를 선택하여 동작시킬 단축키를 입력합니다.&lt;/p&gt;
 
 &lt;p&gt;만약 등록하고자 하는 단축키가 이미 다른 동작에 매핑되어 있으면 경고메세지가 뜨게 됩니다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/keyboard-shortcut.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;경고메세지를 살펴보면 어떤 동작에 해당 단축키가 등록되어 있는지 보여요 :D&lt;/p&gt;
 
@@ -101,7 +112,8 @@ Remove ...
 
 &lt;p&gt;원하는 작업의 버튼을 클릭해주시면 단축키 변경 작업은 완료됩니다.&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;4-단축키-삭제하기&quot;&gt;4. 단축키 삭제하기&lt;/h3&gt;
 &lt;hr /&gt;
 
@@ -115,11 +127,14 @@ Remove ...
 
 &lt;p&gt;다시 키매핑으로 동작을 찾아보면 두가지가 나오는 것을 확인할 수 있습니다.&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;p&gt;기존의 동작이 쓸데가 없다면 해당 단축키를 &lt;code class=&quot;highlighter-rouge&quot;&gt;Remove&lt;/code&gt; 해주시면 됩니다 :D&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/remove.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;잠깐-add-abbreviation-&quot;&gt;#잠깐.. Add Abbreviation ??&lt;/h3&gt;
 &lt;hr /&gt;
 
@@ -133,11 +148,15 @@ Remove ...
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/abbreviation.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;p&gt;등록한 글자가 단축키가 표시되는 부분에 표시되는군요 !&lt;/p&gt;
 
 &lt;p&gt;이렇게 등록된 &lt;code class=&quot;highlighter-rouge&quot;&gt;Abbreviation&lt;/code&gt; 은 키워드를 입력해서 찾는 검색창에 검색하여도 검색이 됩니다.&lt;/p&gt;
 
 &lt;p&gt;하지만 여기서 검색하려고 만든 기능은 아니에요 :D&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Intelli J 를 좀 사용해보셨다면 쉬프트키를 두번 누르면 (Double Shift)&lt;/p&gt;
 
@@ -150,6 +169,8 @@ Remove ...
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-08-intellij-keymap-change/search-everywhere.jpg&quot; alt=&quot;keymap&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Top Hit&lt;/code&gt; 부분에 제일 상단에 해당 메뉴가 조회되는 것을 볼 수 있어요 ~&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;아예 안쓰는 것도 아니고.. 단축키를 등록해놓기도 애매하고..&lt;/p&gt;
 
@@ -168,11 +189,15 @@ Remove ...
     
       <item>
         <title>markdown 문법</title>
-        <description>&lt;p&gt;github 블로그에 포스팅을 하려면 마크다운 언어를 사용해야 합니다 :D&lt;/p&gt;
+        <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;github 블로그에 포스팅을 하려면 마크다운 언어를 사용해야 합니다 :D&lt;/p&gt;
 
 &lt;p&gt;마크다운 언어는 구조적으로 유효한 XHTML 혹은 HTML 로 선택적 변환이 가능하게 하는 것이 목표라네요.&lt;/p&gt;
 
 &lt;p&gt;두고두고 볼 요량으로 정리해봅니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;h1--h6&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;h1 ~ h6&lt;/code&gt;&lt;/h2&gt;
 
