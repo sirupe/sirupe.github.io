@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Oct 2017 17:10:41 +0900</pubDate>
-    <lastBuildDate>Tue, 10 Oct 2017 17:10:41 +0900</lastBuildDate>
+    <pubDate>Wed, 11 Oct 2017 13:08:43 +0900</pubDate>
+    <lastBuildDate>Wed, 11 Oct 2017 13:08:43 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -55,7 +55,7 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;언급했다시피 들어가야 하는 메뉴는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Missnio Control&lt;/code&gt; 메뉴입니다 :D&lt;/p&gt;
+&lt;p&gt;언급했다시피 들어가야 하는 메뉴는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Mission Control&lt;/code&gt; 메뉴입니다 :D&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-10-mac-os/preferences.jpg&quot; alt=&quot;mission control&quot; /&gt;&lt;/p&gt;
 

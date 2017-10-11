@@ -48,7 +48,7 @@ Spotlight 에서 `Mission Control` 을 검색해서 바로 들어가주세요.
 
 <br/>
 
-언급했다시피 들어가야 하는 메뉴는 `Missnio Control` 메뉴입니다 :D
+언급했다시피 들어가야 하는 메뉴는 `Mission Control` 메뉴입니다 :D
 
 ![mission control]({{ site.url }}/upload/images/2017-10-10-mac-os/preferences.jpg)
 

@@ -1,0 +1,38 @@
+htaml, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.container {
+    width: 40%;
+    height: 70%;
+    margin: 0px auto;
+    background-color: white;
+}
+
+.outer {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.centerted {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 35px;
+}
