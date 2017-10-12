@@ -7,13 +7,19 @@
 
 @font-face {
   font-family: 'Jeongum';
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff') format('woff');
   font-style: normal;
   font-weight: 400;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff') format('woff');
+}
+
+@font-face {
+  font-family : 'NanumBarunpen';
+  src: url('/upload/fonts/NanumBarunpen.ttf') format( 'truetype'),
+       url('/upload/fonts/NanumBarunpen.woff2') format('woff2');
 }
 
 // Our variables
-$base-font-family: 'Jeongum';
+$base-font-family: 'NanumBarunpen';
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -59,3 +65,35 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+// customizeing
+.panel-title {
+  width: 77%;
+  height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+blockquote {
+  background-color: #fff3f3;
+  color: #ff5353;
+  border-left-color: #f16565;
+}
+
+th {
+  background-color: #f76666;
+  color: white;
+  font-size: larger;
+}
+
+th, td {
+  padding: 8px;
+}
+/*
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+*/
+tr {
+  border-bottom: 1px solid #ddd;
+}

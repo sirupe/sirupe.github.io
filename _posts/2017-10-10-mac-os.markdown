@@ -4,9 +4,7 @@ title:  "[Mac] Spaces 순서가 자꾸 바뀐다면?"
 categories: mac
 img: use-post/macos.jpg
 ---
-
 <br/>
-
 현재 개인용 노트북으로는 맥북을 사용하고 있습니다.
 
 윈도우의 노예였던 저는 맥북을 100% 활용하지 못했었는데요,
