@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26ea2e6-b693-40d1-af0a-054bd62e7e4b" name="Default" comment="sirupe's blog theme apply">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/images/2017-10-13-intellij/LiveTemplate01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/images/2017-10-13-intellij/live-template-apply.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/images/2017-10-13-intellij/livetemplatemenu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/images/2017-10-13-intellij/selection.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/images/2017-10-13-intellij/smallmenu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/images/2017-10-13-intellij/templategroup01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/images/2017-10-13-intellij/templategroup02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/images/2017-10-13-intellij/typing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/images/2017-10-13-intellij/typing2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-10-13-intellij.markdown" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/upload/fonts/NanumBarunpenB.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/upload/fonts/NanumBarunpenR.ttf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="$PROJECT_DIR$/_site/about/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-10-13-intellij.markdown" afterPath="$PROJECT_DIR$/_posts/2017-10-13-intellij.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/categories/index.html" afterPath="$PROJECT_DIR$/_site/categories/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/contact/index.html" afterPath="$PROJECT_DIR$/_site/contact/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/first-posting/index.html" afterPath="$PROJECT_DIR$/_site/first-posting/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/intellij-keymap-change/index.html" afterPath="$PROJECT_DIR$/_site/intellij-keymap-change/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/intellij/index.html" afterPath="$PROJECT_DIR$/_site/intellij/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/mac-os/index.html" afterPath="$PROJECT_DIR$/_site/mac-os/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/msa/index.html" afterPath="$PROJECT_DIR$/_site/msa/index.html" />
     </list>
@@ -54,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-10-13-intellij.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="529">
-                <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+              <first_editor relative-caret-position="-1856">
+                <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -467,7 +453,7 @@
       <updated>1507357954499</updated>
       <workItem from="1507357955983" duration="9621000" />
       <workItem from="1507376836626" duration="44711000" />
-      <workItem from="1507537184765" duration="49183000" />
+      <workItem from="1507537184765" duration="49717000" />
     </task>
     <task id="LOCAL-00001" summary="sirupe's blog theme apply">
       <created>1507358696385</created>
@@ -508,7 +494,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103515000" />
+    <option name="totallyTimeSpent" value="104049000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -521,7 +507,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -532,7 +517,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298217" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34690553" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34690553" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2884927" sideWeight="0.49333334" order="0" side_tool="false" content_ui="combo" />
@@ -956,8 +941,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-13-intellij.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="529">
-            <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <first_editor relative-caret-position="-1856">
+            <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             <folding />
           </first_editor>
           <second_editor />
