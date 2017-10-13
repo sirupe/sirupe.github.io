@@ -1,0 +1,162 @@
+---
+layout: post
+title:  "[mac] IntelliJ Live template"
+categories: IntelliJ
+img: use-post/intellij.jpg
+toc: true
+---
+
+<br/><br/>
+
+Intelli J 를 사용하면서 유용하다고 느낀 기능 중에 Live template 라는 기능이 있었어요 :D
+
+특정 문자와 템플릿을 매핑해놓고 내 맘대로 !! 사용할 수 있는 기능이에요 :D
+
+예를 들어 저는 블로그 포스팅 시 mdpost 라는 단어에 아래와 같은 템플릿을 매핑해놓고 포스트를 새로 작성할 때마다 유용하게 사용하고 있답니다.
+
+에디터에서 **mdpost 라 입력하고 `tab` 키를 누르면 아래의 템플릿이 자동완성** 되지요 :D
+
+{% highlight markdown %}
+---
+layout: post
+title:  ""
+categories: 
+img: use-post/.jpg
+toc: true
+---
+{% endhighlight %}
+
+<br/>
+
+포스팅과 코딩을 편하게 해주는 Live Template 사용방법을 알아볼까여 !
+
+<br/><br/>
+
+# 1. 메뉴는 어디에?
+***
+기본적으로 Live Template 를 등록하거나 변경할 수 있는 메뉴는 mac os 기준으로 `IntelliJ IDEA` > `Preferences...` > `Editor` > `Live Templates` 메뉴에 있답니다. 메뉴를 따라 클릭하면 아래와 같은 화면이 뜨게 됩니다.
+
+![image]({{ site.url }}/upload/images/2017-10-13-intellij/livetemplatemenu.jpg)
+
+각종 언어별로 template 를 설정할 수 있죠 :D 
+
+![image]({{ site.url }}/upload/images/2017-10-13-intellij/smallmenu.jpg)
+
+우측의 + 버튼을 눌러보면 두가지 메뉴가 나오는 것을 볼 수 있어요.
+
+> **1. Live template** : 템플릿을 추가합니다.
+>
+> **2. Template group...** : 원하는 템플레이트 그룹이 없다면 추가합니다.
+
+<br/><br/>
+
+# 2. Template group 추가
+***
+원하는 그룹이 없다면 `Template group...` 메뉴를 통하여 그룹 추가가 가능합니다. :D
+
+Template group 버튼을 눌러보면 아래와 같은 창이 뜰거에요.
+
+![image]({{ site.url }}/upload/images/2017-10-13-intellij/templategroup01.jpg)
+
+<br/>
+
+추가하고 싶은 group 명을 입력하면 group 리스트에 추가됩니다. 알파벳 순으로 자동 정렬이 되네요 :)
+
+![image]({{ site.url }}/upload/images/2017-10-13-intellij/templategroup02.jpg)
+
+그룹은 별다른 기능 없이 단지 그룹만 만들어주기 때문에 방금 생성된 그룹을 보면 다른 그룹들과는 달리 추가된 템플릿이 없는 것을 확인할 수 있습니다.
+
+그룹을 만든 후 템플릿을 설정하고 싶다면 템플릿을 추가해야겠죠.
+
+<br/><br/>
+
+# 3. Live Template (템플릿 추가)
+***
+
+`+` 메뉴에서 Live Template 를 클릭하면 아래와 같이 템플릿을 추가할 수 있는 화면이 출력됩니다.
+
+![image]({{ site.url }}/upload/images/2017-10-13-intellij/LiveTemplate01.png)
+
+>**<U>Abbreviation</U>**: 사용할 축약어를 입력합니다.
+>
+>**<U>Template text</U>**: 자동 완성할 템플릿을 입력합니다.
+>
+>**<U>Edit Variables</U>**: 만약 템플릿에 변수를 사용할 것이라면 이 버튼을 사용하여 변수 값을 설정합니다.
+>
+>**<U>xExpends with</U>**: `tab`, `space`, `enter` 중 자동완성에 사용할 키를 설정합니다. 
+>
+>**<U>No applicable contexts yet. Define</U>** : 템플릿을 사용할 문서 유형을 선택합니다. (최초 등록시 지정되어 있지 않으며 지정하지 않아도 저장이 가능하나 사용하려 하면 저장한 템플릿이 나오지 않습니다.)
+
+<br/>
+
+기본적으로
+ 1. `Abbreviation` 에 사용할 축약어를 입력 
+ 2. `Template text` 에 사용할 템플릿을 입력 
+ 3. No applicable contexts yet. Define 문구의 `Define` 을 눌러 타입 지정 
+ 4. `Apply` 및 `OK` 버튼을 눌러 저장
+ 5. 에디터에서 입력한 축약어 + `tab` 버튼을 누르는 것
+ 
+으로 사용할 수 있습니다. (물론 `Expends with` 부분을 `space` 나 `enter` 로 변경하였다면 `tab` 대신 변경한 키로 사용하시면 됩니다.)
+
+![image]({{ site.url }}/upload/images/2017-10-13-intellij/live-template-apply.png)
+
+<br/>
+
+(축약어를 입력하면 아래 축약어 리스트가 나옵니다. 화살표 키로 선택 후 엔터를 입력하여도 자동완성이 되며 지정한대로 축약어 모두 입력 후 `tab` 키를 입력하여도 자동완성이 됩니다.)
+![image]({{ site.url }}/upload/images/2017-10-13-intellij/typing.png)
+
+![image]({{ site.url }}/upload/images/2017-10-13-intellij/typing2.png)
+
+<br/><br/>
+
+# 4. 라이브 템플릿 전역변수 *$END$, $SELECTION$*
+***
+Inltelli J 에서는 Live Template 에 변수를 사용할 수 있습니다.
+
+그 중 기본적으로 정의되어 있는 `$END$` 와 `$SELECTION$` 사용법을 소개합니다 :D
+
+<br/>
+
+### $END$
+
+`$END$` 로는 템플릿 완성 후 커서가 위치할 곳을 지정할 수 있습니다. 위의 캡처에서는 `Template text` 영역에는 아래처럼 템플릿을 입력하였습니다.
+
+{% highlight markdown %}
+![image]({{ site.url }}/upload/images/$END$)
+{% endhighlight %}
+
+실제의 코드에서는 위의 캡처에서 보이듯이 `$END$` 부분에 커서 포인트가 위치하게 됩니다.
+{% highlight markdown %}
+![image]({{ site.url }}/upload/images/| (이곳에 커서가 위치하게 됩니다.))
+{% endhighlight %}
+
+<br/>
+
+### $SELECTION$
+
+`$SELECTION$` 으로는 에디터의 입력한 내용을 포함한 템플릿을 완성시킬 수 있습니다.
+
+위에 Template text 부분에 입력했던 템플릿을 아래처럼 `$SELECTION$` 을 포함한 내용으로 변경합니다.
+
+{% highlight markdown %}
+![image]({{ site.url }}/upload/images/$SELECTION$)
+{% endhighlight %}
+
+에디터에서는 저 `$SELECTION$` 부분에 들어갈 내용을 입력합니다.
+
+입력한 내용을 선택한 후 단축키 `option(alt)` + `command` + `T` 를 누르면 아래의 template 선택 리스트가 출력됩니다.
+
+![image]({{ site.url }}/upload/images/2017-10-13-intellij/selection.png)
+
+리스트에서 사용하고자 하는 템플레이트를 선택하여 엔터를 입력하면 에디터에 `$SELECTION$` 부분에 입력했었던 내용이 입력되어 완성된 템플릿이 입력됩니다.
+
+![image]({{ site.url }}/upload/images/2017-10-13-intellij/selection02.png)
+
+<br/><br/>
+
+당장 블로그 포스팅용 markdown 템플릿을 몇 개 등록해보았는데 굉장히 편하네요 ! :D
+
+언어별로 설정할 수 있으니 더욱 유용하게 사용할 수 있을 것 같아요 ^^
+
+<br/><br/>
+

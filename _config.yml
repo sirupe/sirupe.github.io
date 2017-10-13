@@ -18,10 +18,10 @@ timezone: Asia/Seoul
 default-image: poco.jpeg # If there is no featured image in a post then this image will be showed. Also on all pages this image will be showed. Use a 500x250 image.
 
 #footer
-built-by: webjeda
+built-by: sirupe
 copyright:
-   name: webjeda
-   link: 'http://blog.webjeda.com'
+   name:
+   link:
 
 # Build settings
 markdown: kramdown
