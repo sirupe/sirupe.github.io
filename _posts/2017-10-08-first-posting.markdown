@@ -258,3 +258,14 @@ __볼드__
 |row3|data 3-1              |data 3-2             |data 3-3
 
 <br/><br/>
+
+# 문장에 형광펜 칠하기
+***
+
+문장에 이렇게 <mark>형광펜</mark> 을 칠한 효과를 줄 수 있습니다.
+{% highlight markdown %}
+<mark>형광펜</mark>
+{% endhighlight %}
+
+<br/><br/>
+

@@ -6,9 +6,275 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 Oct 2017 15:34:25 +0900</pubDate>
-    <lastBuildDate>Fri, 13 Oct 2017 15:34:25 +0900</lastBuildDate>
+    <pubDate>Tue, 31 Oct 2017 19:43:14 +0900</pubDate>
+    <lastBuildDate>Tue, 31 Oct 2017 19:43:14 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>IntelliJ에서 스프링 프로젝트 생성하기</title>
+        <description>&lt;p&gt;조금 헤메기는 했지만 IntelliJ를 사용하여 스프링 프로젝트를 생성해보았어요 :D&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-스프링-프로젝트-생성&quot;&gt;1. 스프링 프로젝트 생성.&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;File &amp;gt; New &amp;gt; Project...&lt;/code&gt; 차례대로 클릭하면 아래와 같은 창이 뜹니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/newProject.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;좌측의 메뉴에서 생성할 프로젝트를 선택하고 우측에서 추가할 기능을 선택합니다.&lt;/p&gt;
+
+&lt;p&gt;저는 일단 Spring MVC 와 Spring Web Services 두가지만 선택했어요.&lt;/p&gt;
+
+&lt;p&gt;선택하고 난 다음에 Next 버튼을 누르면 다음 화면으로 넘어가요 :D&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/newProject2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Project name 을 설정해줍니다. Project name 을 변경하면 Project location, More settings.. 에 있는 정보들이 자동으로 변경됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;입력한 후 Finish 를 누르면 프로젝트가 생성됩니다. 생성된 프로젝트의 구조는 아래와 같아요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/projectStructure.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2-프로젝트-빌드-툴-추가&quot;&gt;2. 프로젝트 빌드 툴 추가&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Spring 프로젝트를 선택하고 프로젝트를 생성하면 생성된 프로젝트에 Maven 이나 Gradle 과 같은 프로젝트 빌드 툴이 추가되지 않은 채 프로젝트가 생성됩니다.&lt;/p&gt;
+
+&lt;p&gt;하지만 그렇다고 해서 프로젝트 빌드 툴을 중간에 추가하지 못하는 것은 아니지요 :)&lt;/p&gt;
+
+&lt;p&gt;왼쪽 프로젝트에 우클릭을 하면 너무나도 정직한 이름의 메뉴가 있습니다. (바로 &lt;code class=&quot;highlighter-rouge&quot;&gt;Add Framework Support&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/addFrameworkSupport1.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;클릭해보면 아래와 같은 화면이 뜹니다. 저는 메이븐을 선택하고 OK 하였습니다. (이 메뉴에서 Gradle 은 찾을 수 없었습니다. 메이븐 혹은 그래들 프로젝트로 생성한 후 똑같은 방법으로 Spring MVC 나 Spring Web Services 를 추가할 수 있습니다.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/addMaven.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그러면 프로젝트에 pom.xml 이 추가된 것을 확인할 수 있습니다 :D&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/pomxml.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-기본-xml-관리&quot;&gt;3. 기본 xml 관리&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;메이븐까지 추가하고 나면 xml 파일은 총 4개가 됩니다. (&lt;code class=&quot;highlighter-rouge&quot;&gt;applicationContext.xml&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;dispatcher-servlet.xml&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;web.xml&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;pom.xml&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-1-webxml&quot;&gt;3-1. web.xml&lt;/h3&gt;
+
+&lt;p&gt;자동 생성된 web.xml 파일의 내용은 아래와 같습니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;web-app&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;&lt;/span&gt;
+         &lt;span class=&quot;na&quot;&gt;xmlns:xsi=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&lt;/span&gt;
+         &lt;span class=&quot;na&quot;&gt;xsi:schemaLocation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;&lt;/span&gt;
+         &lt;span class=&quot;na&quot;&gt;version=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;3.1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;context-param&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;param-name&amp;gt;&lt;/span&gt;contextConfigLocation&lt;span class=&quot;nt&quot;&gt;&amp;lt;/param-name&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;param-value&amp;gt;&lt;/span&gt;/WEB-INF/applicationContext.xml&lt;span class=&quot;nt&quot;&gt;&amp;lt;/param-value&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/context-param&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;listener&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;listener-class&amp;gt;&lt;/span&gt;org.springframework.web.context.ContextLoaderListener&lt;span class=&quot;nt&quot;&gt;&amp;lt;/listener-class&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/listener&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;servlet&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;servlet-name&amp;gt;&lt;/span&gt;dispatcher&lt;span class=&quot;nt&quot;&gt;&amp;lt;/servlet-name&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;servlet-class&amp;gt;&lt;/span&gt;org.springframework.web.servlet.DispatcherServlet&lt;span class=&quot;nt&quot;&gt;&amp;lt;/servlet-class&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;load-on-startup&amp;gt;&lt;/span&gt;1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/load-on-startup&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/servlet&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;servlet-mapping&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;servlet-name&amp;gt;&lt;/span&gt;dispatcher&lt;span class=&quot;nt&quot;&gt;&amp;lt;/servlet-name&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;url-pattern&amp;gt;&lt;/span&gt;*.form&lt;span class=&quot;nt&quot;&gt;&amp;lt;/url-pattern&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/servlet-mapping&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/web-app&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;servlet-mapping 의 url-pattern 을 &lt;code class=&quot;highlighter-rouge&quot;&gt;*.form&lt;/code&gt; 에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; 로 바꿔줍니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;servlet-mapping&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;servlet-name&amp;gt;&lt;/span&gt;dispatcher&lt;span class=&quot;nt&quot;&gt;&amp;lt;/servlet-name&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;url-pattern&amp;gt;&lt;/span&gt;/&lt;span class=&quot;nt&quot;&gt;&amp;lt;/url-pattern&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/servlet-mapping&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-2-dispatcher-servletxml&quot;&gt;3-2. dispatcher-servlet.xml&lt;/h3&gt;
+
+&lt;p&gt;자동 생성된 dispatcher-servlet.xml 의 내용은 아래와 같습니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;beans&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.springframework.org/schema/beans&quot;&lt;/span&gt;
+       &lt;span class=&quot;na&quot;&gt;xmlns:xsi=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&lt;/span&gt;
+       &lt;span class=&quot;na&quot;&gt;xsi:schemaLocation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/beans&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;아래의 내용을 추가해줍니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;beans&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.springframework.org/schema/beans&quot;&lt;/span&gt;
+       &lt;span class=&quot;na&quot;&gt;xmlns:xsi=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:mvc=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.springframework.org/schema/mvc&quot;&lt;/span&gt;
+       &lt;span class=&quot;na&quot;&gt;xmlns:context=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.springframework.org/schema/context&quot;&lt;/span&gt;
+       &lt;span class=&quot;na&quot;&gt;xsi:schemaLocation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;mvc:annotation-driven/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;context:component-scan&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;base-package=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;main.java.controller&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;bean&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;prefix&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/WEB-INF/views/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;suffix&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;.jsp&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/bean&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/beans&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그런데.. 자동 생성된 프로젝트에는 위에서 추가한 controller 나 views 디렉토리 등이 없습니다.&lt;/p&gt;
+
+&lt;p&gt;단지 src 와 WEB-INF 디렉토리만이 있을 뿐이죠. 없는 부분은 추가해주면 되죠 :D&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4-controller-및-view&quot;&gt;4. controller 및 view&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;4-1-컨트롤러-만들기&quot;&gt;4-1. 컨트롤러 만들기&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src &amp;gt; main &amp;gt; java&lt;/code&gt; 아래에 &lt;code class=&quot;highlighter-rouge&quot;&gt;controller&lt;/code&gt; 패키지를 만들고 &lt;code class=&quot;highlighter-rouge&quot;&gt;BasicController&lt;/code&gt; 클래스를 만들어주었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/controller.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;컨트롤러가 정상적으로 컨트롤러 역할을 할 수 있게끔 어노테이션을 사용하여 코드를 작성합니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Controller&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BasicController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nd&quot;&gt;@RequestMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;index&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;BasicController&lt;/code&gt; 에서 index 를 리턴하였는데요, &lt;code class=&quot;highlighter-rouge&quot;&gt;dispatcher-servlet.xml&lt;/code&gt; 에 설정한 값에 따라 &lt;code class=&quot;highlighter-rouge&quot;&gt;/WEV-INF/views/index.jsp&lt;/code&gt; 를 요청할 것입니다. 하지만 기본 생성된 구조에는 해당 폴더도 없고 &lt;code class=&quot;highlighter-rouge&quot;&gt;index.jsp&lt;/code&gt; 가 알맞은 위치에 있는 것도 아니니 변경해주도록 합시다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-2-view-디렉토리-만들기&quot;&gt;4-2. view 디렉토리 만들기&lt;/h3&gt;
+
+&lt;p&gt;기본적으로 web 디렉토리 이하로는 아래와 같은 구조를 가지고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/beforeindex.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;WEB-INF&lt;/code&gt; 디렉토리 아래에 &lt;code class=&quot;highlighter-rouge&quot;&gt;views&lt;/code&gt; 디렉토리를 만들고 &lt;code class=&quot;highlighter-rouge&quot;&gt;index.jsp&lt;/code&gt; 파일을 &lt;code class=&quot;highlighter-rouge&quot;&gt;views&lt;/code&gt; 디렉토리 아래로 옮겨줍니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/afterindex.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;5-server-설정&quot;&gt;5. server 설정&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;어느정도 기본 틀이 잡혔다면 서버를 설정해줍니다.&lt;/p&gt;
+
+&lt;p&gt;전 &lt;a href=&quot;http://tomcat.apache.org/&quot;&gt;톰캣 홈페이지&lt;/a&gt; 에서 apache-tomcat-8.5.23 버전을 다운받았습니다. (&lt;del&gt;엄연히 말하자면 톰캣이 웹서버는 아니지만&lt;/del&gt;) 사용하기 편하다고 생각되는 경로에 다운받은 톰캣의 압축을 풀어줍니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Run &amp;gt; Edit Configurations...&lt;/code&gt; 이 경로의 메뉴에서 서버를 설정할 수 있습니다. 차례대로 클릭하면 아래와 같은 화면이 뜹니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/tomcatserver01.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;먼저 좌측의 리스트에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;Tomcat Server &amp;gt; Local&lt;/code&gt; 을 선택합니다.&lt;/li&gt;
+  &lt;li&gt;이미 서버를 설정한 적이 있다면 &lt;code class=&quot;highlighter-rouge&quot;&gt;Application server&lt;/code&gt; 의 리스트에 서버가 나타날 것이지만 처음 설정하는 것이라면 &lt;code class=&quot;highlighter-rouge&quot;&gt;Configure...&lt;/code&gt; 을 눌러줍니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Configure...&lt;/code&gt; 창에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;...&lt;/code&gt; 을 클릭하여 설치한 톰캣 서버 디렉토리를 선택해줍니다.
+&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/tomcatserver02.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;After launch 의 선택을 해제해주고 (launch 후 선택한 브라우저로 페이지를 띄워주느냐에 대한 설정이기 때문에 필요하다면 굳이 해제하지 않으셔도 됩니다 :D)&lt;/li&gt;
+  &lt;li&gt;HTTP port 설정을 해줍니다. (기본은 8080 이지만 다른 포트번호를 사용하고 싶으시다면 변경해주세요.)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;그리고 OK 를 눌러주면 기본 설정은 끝났습니다.&lt;/p&gt;
+
+&lt;p&gt;(만약 설정 중 하단에 아래와 같은 메세지-Warning:No artifacts marked for deployment 가 나온다면 fix 를 눌러주세요. )&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/fix.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;6-indexjsp-내용-수정&quot;&gt;6. index.jsp 내용 수정&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index.jsp&lt;/code&gt; 에 화면에 출력해 줄 내용을 추가합니다 :D&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%@&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;contentType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/html;charset=UTF-8&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;language=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;java&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;spring&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    Hello world!
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;7-server-run&quot;&gt;7. server run&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;서버까지 추가되었으면 run 해봅시다. 톰캣을 run 하고 http://localhost:8080/ 에 접속해보니.. 404 오류가 발생하는군요. 혹시 서버 run 중&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;심각 [RMI TCP Connection(2)-127.0.0.1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+심각 [RMI TCP Connection(2)-127.0.0.1] org.apache.catalina.core.StandardContext.startInternal Context [] startup failed due to previous errors&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;이러한 메세지가 발생한다면 추가적인 작업이 필요합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;File &amp;gt; Project Structure...&lt;/code&gt; 메뉴로 들어가면 아래의 창이 뜹니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/projectstructureAdd.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Aviliable Elements&lt;/code&gt; 영역에 있는 모든 항목을 더블클릭하여 추가한 후 OK 버튼을 눌러줍니다.&lt;/p&gt;
+
+&lt;p&gt;그리고 다시 서버를 run 한 후 http://localhost:8080/ 으로 접속하면 Hello wolrd 를 볼 수 있습니다 :D&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/upload/images/2017-10-31-new-spring-project/helloworld.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게 IntelliJ 에서의 기초적인 Spring 프로젝트 생성은 완료하였습니다.&lt;/p&gt;
+
+&lt;p&gt;DB와의 연결을 추가하고 서비스를 만드는 등의 작업은 별도로 진행되어야 합니다 :D&lt;/p&gt;
+
+&lt;p&gt;각종 xml 파일에서 어떠한 것들을 설정하게 되는지는 다음에 자세히 알아보도록 하겠습니다 :D&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 31 Oct 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/new-spring-project/</link>
+        <guid isPermaLink="true">http://localhost:4000/new-spring-project/</guid>
+        
+        
+        <category>spring</category>
+        
+      </item>
     
       <item>
         <title>[Mac] Live template</title>
@@ -260,6 +526,7 @@ Intelli J 를 사용하면서 유용하다고 느낀 기능 중에 Live template
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;4-msa-사용시의-장점-&quot;&gt;4. MSA 사용시의 장점 !&lt;/h1&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;서비스코드가 나뉨으로 인해서 MSA 의 장점이 드러나게 됩니다.&lt;/p&gt;
 
@@ -356,6 +623,8 @@ Intelli J 를 사용하면서 유용하다고 느낀 기능 중에 Live template
 &lt;p&gt;만약 &lt;strong&gt;일부 서비스에만 장애가 발생하는 경우 장애 종류에 따라 적절한 처리가 가능하도록 설계/구현 해야 합니다.&lt;/strong&gt; 서비스별로 다른 에러 안내 페이지를 구현하고 전체 페이지 로드시 하나의 서비스에 에러가 발생하였다면 에러가 난 부분만 만들어놓은 에러 페이지를 띄워주고 다른 영역의 로드에는 문제가 없도록 해야 합니다.&lt;/p&gt;
 
 &lt;p&gt;요청과 처리가 너무 많다면 &lt;strong&gt;응답이 지연될 수 있습니다&lt;/strong&gt;. 이를 줄이기 위하여 재활용이 가능한 기존의 응답은 캐싱하여 재활용 할 수 있습니다. 예를 들어 날씨서비스 에서 매번 새로운 결과를 받아오는 것이 아니라 정해진 시간마다 결과를 받아오고 그 시간 안에는 전에 받아왔던 데이터를 사용하는 등의 작업을 할 수 있겠습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Oct 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/msa/</link>
@@ -955,6 +1224,16 @@ github 블로그에 포스팅을 하려면 마크다운 언어를 사용해야 �
 &lt;/table&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;문장에-형광펜-칠하기&quot;&gt;문장에 형광펜 칠하기&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;문장에 이렇게 &lt;mark&gt;형광펜&lt;/mark&gt; 을 칠한 효과를 줄 수 있습니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;mark&amp;gt;&lt;/span&gt;형광펜&lt;span class=&quot;nt&quot;&gt;&amp;lt;/mark&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Sun, 08 Oct 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/first-posting/</link>
