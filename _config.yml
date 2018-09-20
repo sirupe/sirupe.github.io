@@ -49,4 +49,7 @@ sass:
   style: compressed
 
 # Ruby Gems
-gems: [jekyll-paginate, jekyll-seo-tag, jekyll-toc]
+plugins: 
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-toc
