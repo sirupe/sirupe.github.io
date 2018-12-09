@@ -168,6 +168,7 @@ public interface FlyBehavior {
 }
 ```
 이 인터페이스는 단순이 나는 행동과 구체적인 나는 행동들이 무엇을 구현해야 하는지만 나타냅니다. 이러한 인터페이스를 따라 구체적인 클래스를 작성해주도록 합니다.
+
 ```java
 public class FlyWithWings implements FlyBehavior {
     @Override
