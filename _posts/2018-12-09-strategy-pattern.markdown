@@ -173,7 +173,8 @@ public class FlyWithWings implements FlyBehavior {
     @Override
     public void fly() { System.out.println("오리 날다!!!"); }
 }
-
+```
+```java
 public class FlyNoWay implements FlyBehavior {
     @Override
     public void fly() { System.out.println("저는 날지 못해요."); }
