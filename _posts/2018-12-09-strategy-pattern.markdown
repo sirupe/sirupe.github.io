@@ -150,7 +150,7 @@ public class RubberDuck extends Duck implements Quackable {
 > - 구현이 아닌 인터페이스에 맞춰서 프로그래밍 한다.
 > - 상속보다는 구성을 활용한다.
 
-이 가지를 염두에 두면서 위 코드에 대해 다시 생각해보도록 합시다.
+이 세가지를 염두에 두면서 위 코드에 대해 다시 생각해보도록 합시다.
 
 
 ### 세번째 해결책 : Strategy 패턴 적용
