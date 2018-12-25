@@ -40,14 +40,126 @@ toc: true
 ---
 옵저버 패턴에서 subject 가 발행한 내용을 받을 구독자를 Observer 라고 부릅니다. 네, 패턴의 이름이 되는 옵저버는 여기에서 나온 것이죠. 패턴의 이름이 된다니, 얼마나 중요한지 감이 오시나요? 
 
-보통 옵저버들은 자신이 관심있는 분야의 subject 에게 자신을 등록합니다. 등록은 몇 개의 subject 가 있던 얼마든지 할 수 있죠. 심지어 subject 에게 지금 다른 observer 가 얼마나 등록되어 있는지 어떤 observer 가 등록되어 있는지 신경쓸 필요가 전혀 없습니다. 
+보통 옵저버들은 자신이 관심있는 분야의 subject 에게 자신을 등록합니다. 등록은 subject 에게 지금 다른 observer 가 얼마나 등록되어 있는지 어떤 observer 가 등록되어 있는지 신경쓸 필요 없이 할 수 있습니다. 
 
-observer 는 subject 에 구독을 등록해놓고 신경쓰지 않습니다. 자기의 할 일을 할 뿐입니다. 그러다 발행자에게서 알림이 오면 적당항 행동을 하죠. observer 에게는 이미 subject 에게서 알림이 왔을 때 해야 할 일이 정해져 있고 이에 따라 subject 에서 같은 알림이 올 때마다 해당 행동을 반복합니다. 
+observer 는 subject 에 구독을 등록해놓고 신경쓰지 않습니다. 자기의 할 일을 할 뿐입니다. 그러다 발행자에게서 알림이 오면 적당한 행동을 하죠. observer 에게는 이미 subject 에게서 알림이 왔을 때 해야 할 일이 정해져 있고 이에 따라 subject 에서 같은 알림이 올 때마다 해당 행동을 반복합니다. 
+
+## Observer 패턴의 정의
+
+---
+옵저버 패턴을 한 마디로 정의해보자면 `한 객체의 상태가 바뀌면 그 객체에 의존하는 다른 객체들한테 연락이 가고 자동으로 내용이 갱신되는 방식으로 일대다(one-to-many) 의존성을 정의한다.` 라고 할 수 있습니다. 
+
+이 일대다 관계는 subject 와 observer 에 의해 정의됩니다. observer 는 subject 에 의존하게 되죠. 한 객체(subject) 의 상태가 변경되면 그 객체에 의존하고 있는 모든 객체(observers) 에게 연락이 갑니다. 
 
 ## 이벤트에 대한 처리
 
 ---
 옵저버 패턴을 공부하기 전에는 알지 못했지만 옵저버 패턴의 행동방식을 알고 난 뒤에 보이는 것들이 있습니다. 옵저버 패턴이 적용된 아주 대표적인 예에 해당하는 스윙 및 브라우저 등의 각종 이벤트 처리에 대한 것입니다. 스윙이나 브라우저의 화면에서 버튼이나 체크박스 등의 컴포넌트들을 사용자가 동작시켰을 때 실행되는 메서드들은 프로그램을 개발한 개발자가 직접 호출한 것이 아니죠. 그 메서드들은 특정 조건이 발동하였을 때 실행됩니다. 예를 들면, '버튼을 클릭했을 때', '체크박스에 체크되었을 때' 등이죠. 
 
-메서드나 함수는 코드상에서 명시적으로 호출해주어야 동작합니다. `toString();` 과 같이 말이죠. 하지만 이벤트 발생시 실행되는 위와 같은 메서드, 함수들은 전혀 명시적으로 호출해 준 적이 없을텐데요, 어떻게 동작하는 걸까요? 
+메서드나 함수는 코드상에서 명시적으로 호출해주어야 동작합니다. `toString();` 과 같이 말이죠. 하지만 이벤트 발생시 실행되는 위와 같은 메서드, 함수들은 전혀 명시적으로 호출해 준 적이 없을텐데요, 어떻게 동작하는 걸까요? 예제를 통해 알아보도록 하겠습니다.
 
+## Observer 와 Subject 인터페이스
+
+---
+observer 패턴은 기본적으로 인터페이스를 사용하여 구현합니다. 반드시 구현되어야 하는 메소드를 포함한 인터페이스 Observer 와 Subject 가 존재하죠.
+```java
+public interface Subject {
+    void registerObserver(Observer o);
+    void removeObserver(Observer o);
+    void notifyObserver();
+}
+
+public interface Observer {
+    void update();
+}
+```
+Subject 인터페이스는 observer 를 등록, 삭제하는 메소드와 observer 에 변경사실을 알려줄 메소드를 포함하고 있습니다. Observer 인터페이스는 알림이 오면 실행될 메소드를 하나만 가지고 있을 뿐입니다. 둘 다 인터페이스이므로 Subject 나 Observer 역할을 하기 위해 어떤 클래스가 해당 인터페이스를 구현한다면 반드시 위 메소드들을 Override 해야 합니다. 
+
+지금 사용할 예제는 기상스테이션 입니다. 기온, 습도, 기압 데이터가 갱신될 때마다 변경되는 데이터를 기계에 display 하는 프로그램이죠. 여기에서 기계는 여러가지가 될 수 있습니다. 이러한 프로그램을 작성해야 한다고 가정하고 Observer 패턴을 적용해봅시다. 
+
+## 기상 스테이션 예제
+
+---
+#### Subject
+변경될 데이터가 수신될 클래스는 WeatherData 클래스로 아래와 같이 생겼습니다.
+```java
+public class WeatherData implements Subject {
+    private ArrayList<Observer> observers;
+    private float temperature;
+    private float humidity;
+    private float pressure;
+
+    public WeatherData() {
+        this.observers = new ArrayList<>();
+    }
+    @Override
+    public void registerObserver(Observer o) {
+        this.observers.add(o);
+    }
+
+    @Override
+    public void removeObserver(Observer o) {
+        int i = this.observers.indexOf(o);
+        if (i >= 0) {
+            this.observers.remove(i);
+        }
+    }
+
+    @Override
+    public void notifyObserver() {
+        observers.forEach(observer -> observer.update(this.temperature, this.humidity, this.pressure));
+    }
+    
+    public void measurementsChanged() {
+        this.notifyObserver();
+    }
+    
+    public void setMeasurements(float temperature, float humidity, float pressure) {
+        this.temperature = temperature;
+        this.humidity = humidity;
+        this.pressure = pressure;
+        this.measurementsChanged();
+    }
+}
+```
+WeatherData 클래스는 Subject 인터페이스를 상속받아 Subject 역할을 하게 되었습니다. 이로 인해 Subject 인터페이스에서 구현을 강제하고 있는 메소드들을 구현하였죠. 데이터를 수신받아 변경되었다면 display 를 담당하고 있는 클래스들에게 데이터가 변경되었다는 것을 알려야 합니다. 대신 단순히 알려주기만 한다면 변경된 데이터를 표시해야 하는 display 측에서 어떤 데이터가 변경되었는지 알 수 없으므로 알려줄 때 변경된 데이터도 함께 알려주어야 합니다. 이로 인해 알림 메소드인 notifyObserver() 메소드에는 매개변수로 변경되는 데이터가 포함되었죠. 당연히 Observer 인터페이스도 아래와 같이 변경될 것입니다.
+```java
+public interface Observer {
+    void update(float temp, float humidity, float pressure);
+}
+```
+이외에도 변경된 데이터를 수신하는 메소드, 변경된 것을 알려주는 메소드가 포함되어 있습니다. 
+
+#### Observer
+Subject 인 WeatherData 는 자신이 가지고 있던 데이터가 변경되면 자신을 구독하고 있던 Observer 들에게 알립니다. 그 Observer 들은 observers 리스트에 자신을 등록함으로써 알림을 받을 수 있습니다. Observer 가 Subject 에게 알림을 받아야 하는 중요한 이유는 바로 그 변경된 데이터를 가지고 해야 하는 작업이 있기 때문이죠. 여기에서는 display 가 그 중요한 작업입니다.
+```java
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
+    private float temperature;
+    private float humidity;
+    private Subject weatherData;
+
+    public CurrentConditionsDisplay(Subject weatherData) {
+        this.weatherData = weatherData;
+        this.weatherData.registerObserver(this);
+    }
+
+    @Override
+    public void display() {
+        System.out.println("Current conditions: " + this.temperature + "F degrees and " + humidity + "% humidity");
+    }
+
+    @Override
+    public void update(float temp, float humidity, float pressure) {
+        this.temperature = temp;
+        this.humidity = humidity;
+        this.display();
+    }
+}
+```
+DisplayElement 는 모든 display 가 구현하기로 약속된 인터페이스이며 display() 메소드를 가지고 있습니다. CurrentConditionsDisplay 는 현재 상태를 나타내는 display 로 Display 인터페이스를 구현함으로써 자신이 display 임을 나타내고 Observer 인터페이스를 구현함으로써 Subject 로부터 데이터가 변경되었다는 사실과 변경된 데이터를 받아올 수 있습니다. 
+
+ 이는 CurrentConditionsDisplay 클래스가 생성될 때 Subject 인 WeatherData 객체를 매개변수로 받아 WeatherData 가 가지고 있는 옵저버 리스트에 본인을 등록함으로써 가능해집니다. 
+ 
+ Subject 를 상속받은 WeatherData 는 무조건 Subject 가 가지고 있는 메소드들을 가지고 있을 것이고 Observer 인 CurrentConditionsDisplay 입장에서는 안전하게 자기 자신을 옵저버로 등록할 수 있을 것입니다. 
+ 
+ 하지만 WeatherData 의 옵저버 등록 메소드는 Observer 가 될 수 있는 클래스만 등록이 가능합니다. 그렇지 않은 클래스는 아예 입장조차 하지 못하죠. Subject 입장에서는 Observer 가 가지고 있는 update 클래스를 가지고 있는 클래스라야 안전하게 update() 를 호출할 수 있을테니까요. 이 때문에 WeatherData 에 관심이 있는 display 들은 반드시 Observer 인터페이스를 구현해야만 합니다.
