@@ -125,7 +125,7 @@ public static Boolean valueOf(boolean b) {
     ```
 <br/>
 
-4. 형인자 자료형(parameterized type) 객체를 만들기가 수월하다.(단, 자바 1.7 부터 생성자를 호출할 때도 자료형 유추를 사용할 수 있도록 update 되었다. 아래와 같이 다이아몬드 연산자가 추가됨으로써 표준 컬렉션 메서드에서 정적 팩터리 메서드를 추가할 필요가 없어졌다.)
+4. 형인자 자료형(parameterized type) 객체를 만들기가 수월하다.(단, 자바 1.7 부터 생성자를 호출할 때도 자료형 유추를 사용할 수 있도록 update 되었다. 아래와 같이 <mark>다이아몬드 연산자가 추가됨으로써 표준 컬렉션 메서드에서 정적 팩터리 메서드를 추가할 필요가 없어졌다.</mark>)
     ```java
     Map<String, List<String>> myMap = new HashMap<>();
     ```
